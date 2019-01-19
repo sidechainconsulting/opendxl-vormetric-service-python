@@ -1,0 +1,38 @@
+Vormetric Service
+=================
+
+Overview
+--------
+
+Sidechain is a leading consulting and services firm specializing in data security and encryption technologies. We focus on Vormetric Data Security products.
+
+This OpenDXL service provides the DXL fabric with critical, real-time alerts from Vormetric when unauthorized access attempts are made to sensitive data. These alerts indicate that some unintended data access is happening, either from an unauthorized party, roague application, or bad actor. 
+
+Our intent is that other applications and technologies could benefit from this information, and take much needed remediation to prevent further unintended behavior. 
+
+Documentation
+-------------
+
+When a Vormetric Transparent Agent is protecting data on a host, it can be configured to send events, such as these unauthorized access events, to a log either local to the agent (rarely), a centralized syslog server (commonly), or to the Data Security Manager appliance. 
+
+In order for this service to find the alerts, it monitors the log where these events are being written to. While discarding all irrelevant log events, if it finds a Vormetric Unauthorized Access event, the OpenDXL Service will parse the log and send the event onto the DXL Fabric. 
+
+The only configuration necessary to make is the full path to the log file to monitor, which is set in the config file.
+
+Bugs and Feedback
+-----------------
+
+For bugs, questions, and discussions about this OpenDXL Service, please use Github Issues. 
+
+For general inquiries or questions, please visit us at the <a href="http://sidechainconsulting.com">Sidechain website</a>.
+
+LICENSE
+-------
+
+Copyright 2019 Sidechain Consulting LLC
+
+Licensed under the Apache License, Version 2.0 (the "license"); you may not use this file except in compliance with the license. You may obtain a copy of the license at:
+
+<a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
