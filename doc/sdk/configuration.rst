@@ -53,16 +53,23 @@ Vormetric Service (vormetricservice.config)
 
         .. code-block:: python
 
-            TODO: Provide configuration file example
+            [General]        
+            # The location of the Vormetric log file
+            logLocation=/tmp/vorlog
+            # The interval to check the log in seconds
+            logCheckInterval=10
 
-    **TODO: Provide section name**
 
-        The ``TODO: Provide section name`` section is used to specify...
+    **GENERAL**
+
+        The ``General`` section is used to specify...
 
         +------------------------+----------+--------------------------------------------------------------------+
         | Name                   | Required | Description                                                        |
         +========================+==========+====================================================================+
-        | TODO: Provide property | yes      | TODO: Provide property description                                 |
+        | logLocation            | yes      | Location of Vormetric agent logging                                |
+        +------------------------+----------+--------------------------------------------------------------------+
+        | logCheckInterval       | yes      | Frequency (in seconds) to check log file for Vormetric alerts      |
         +------------------------+----------+--------------------------------------------------------------------+
 
 Logging File (logging.config)

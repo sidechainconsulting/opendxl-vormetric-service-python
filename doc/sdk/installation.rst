@@ -17,19 +17,7 @@ Installation
 
 This distribution contains a ``lib`` sub-directory that includes the application library files.
 
-Use ``pip`` to automatically install the library:
-
-    .. parsed-literal::
-
-        pip install vormetricservice-\ |version|\-py2-none-any.whl
-
-Or with:
-
-    .. parsed-literal::
-
-        pip install vormetricservice-\ |version|\.zip
-
-As an alternative (without PIP), unpack the vormetricservice-\ |version|\.zip (located in the lib folder) and run the setup
+Unpack the vormetricservice-\ |version|\.zip (located in the lib folder) and run the setup
 script:
 
     .. parsed-literal::

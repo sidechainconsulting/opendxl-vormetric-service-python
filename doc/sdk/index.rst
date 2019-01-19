@@ -29,9 +29,6 @@ Configuration
 
     sampleconfig
 
-Basic
-
-    TODO: Provide samples documentation
 
 Python API
 ----------
